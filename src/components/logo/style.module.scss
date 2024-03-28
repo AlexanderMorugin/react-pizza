@@ -1,0 +1,43 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font: var(--font-l-bold);
+  color: var(--text-dark-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  font: var(--font-xs-medium);
+  color: var(--text-dark-secondary);
+  letter-spacing: 0.55px;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,46 @@
+.basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+  background: var(--background-orange-primary);
+  border: 0;
+  border-radius: 18px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.basket:hover {
+  box-shadow: 0 0 5px var(--stroke-dark-secondary);
+}
+
+.text {
+  font: var(--font-s-bold);
+  color: var(--light-primary);
+  margin: 0;
+  padding: 0;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-left: 1px solid var(--light-secondary);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 0 12px;
+}
+
+.image {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
