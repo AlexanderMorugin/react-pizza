@@ -4,7 +4,7 @@
   align-items: center;
   gap: 12px;
   width: fit-content;
-  background: var(--background-orange-primary);
+  background: var(--orange-primary);
   border: 0;
   border-radius: 18px;
   box-sizing: border-box;
@@ -15,7 +15,7 @@
 }
 
 .basket:hover {
-  box-shadow: 0 0 5px var(--stroke-dark-secondary);
+  box-shadow: 0 0 5px var(--grey-thirdary);
 }
 
 .text {
