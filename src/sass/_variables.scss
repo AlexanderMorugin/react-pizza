@@ -1,6 +1,6 @@
 :root {
 	// font
-	--font-family-main: 'PT-Root-UI-VF', Arial, Helvetica, sans-serif;
+	--font-family-main: 'Inter', Arial, Helvetica, sans-serif;
 
 	// font wiegth
 	--font-weigth-bold: 700;
@@ -107,16 +107,11 @@
 		var(--font-line-small-3xl) var(--font-family-main);
 
 	// colors
-  --light-primary: #FFF;
-  --light-secondary: #E5E5E5;
-
+  --light-primary: #F8F8F8;
+  --light-secondary: #F0F0EF;
   
-  
-  // --background-light-primary: #F8F8F8;
-  // --background-light-secondary: #F0F0EF;
-  
-  --grey-primary: #EEEEEE;
-  --grey-secondary: #E0E0E0;
+  --grey-primary: #DFDFDF;
+  --grey-secondary: #CECECE;
   --grey-thirdary: #969AB0;
    
   --orange-primary: #FFA200;
@@ -126,21 +121,8 @@
   --brown-primary: #EAE6DF;
   --brown-secondary: #DCBC85;  
 
-  // --stroke-dark-primary: #DFDFDF;
-  // --stroke-dark-secondary: #CECECE;
-  // --stroke-dark-thirdary: #DADADA;
-
   --dark-primary: #222628;
   --dark-secondary: #24262F;
- 
-
-  
-  
-  
-  
-  
-  
-
 
 	// --accent: #ea5a0a;
 	// --accent-hard: #aa4000;
@@ -150,46 +132,4 @@
 	// --error: #d20202;
 	// --light-primary: #ffffff;
 	// --light-secondary: #f1f5f9;
-
-	// text colors
-	// --color-text-primary: var(--dark-primary);
-	// --color-text-secondary: var(--dark-secondary);
-	// --color-text-secondary-light: #7b878f;
-	// --color-text-nav-primary: var(--light-primary);
-	// --color-text-nav-secondary: #a0abb5;
-	// --color-text-nav-secondary-light: #c7d0da;
-	// --color-text-accent: var(--accent);
-	// --color-text-accent-hard: var(--accent-hard);
-	// --color-text-accent-light: var(--accent-light);
-	// --color-text-link: #048aa7;
-	// --color-text-link-hard: #006b83;
-	// --color-text-error: var(--error);
-
-	// bg colors
-	// --color-bg-primary: var(--light-primary);
-	// --color-bg-secondary: #7dcdd7;
-	// --color-bg-dark-primary: var(--dark-primary);
-	// --color-bg-dark-secondary: var(--dark-secondary);
-	// --color-bg-accent: var(--accent);
-	// --color-bg-light-primary: #f8fbff;
-	// --color-bg-light-secondary: var(--light-secondary);
-
-	// button colors
-	// --color-btn-blue: #54a9ea;
-	// --color-btn-primary: var(--accent);
-	// --color-btn-primary-light: var(--accent-light);
-	// --color-btn-primary-dark: var(--accent-hard);
-	// --color-btn-secondary: var(--dark-primary);
-
-	// inputs bg
-	// --color-bg-input-default: var(--light-secondary);
-	// --color-bg-input-hover: #e0e9f2;
-	// --color-bg-autocomplete: #fcf3c5;
-	// --color-error-border: var(--error);
-
-	// font numbers
-	--font-family-numbers: 'PT-Root-UI-VF', Arial, Helvetica, sans-serif;
-
-	// box-shadows
-	// --table-drop-down-box-shadow: rgba(0, 77, 95, 0.24);
 }

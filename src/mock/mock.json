@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Пицца Сырная",
+    "description": "Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D610D2925109AB2E1C92CC5383C.avif"
+  },
+  {
+    "id": 2,
+    "name": "Пицца Пепперони",
+    "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D612FC7B7FCA5BE822752BEE1E5.avif"
+  },
+  {
+    "id": 3,
+    "name": "Пицца Двойной цыпленок",
+    "description": "Цыпленок, моцарелла, фирменный соус альфредо",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D614CBE0530B7234B6D7A6E5F8E.avif"
+  },
+  {
+    "id": 4,
+    "name": "Пицца Ветчина и сыр",
+    "description": "Ветчина, моцарелла, фирменный соус альфредо",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D60FDA22358AC33C6A44EB093A2.avif"
+  },
+  {
+    "id": 5,
+    "name": "Пицца Чоризо фреш",
+    "description": "Острая чоризо, сладкий перец, моцарелла, фирменный томатный соус",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D61706D472F9A5D71EB94149304.avif"
+  },
+  {
+    "id": 6,
+    "name": "Пицца Жюльен",
+    "description": "Цыпленок, шампиньоны, ароматный грибной соус, красный лук, чеснок, моцарелла, смесь сыров чеддер и пармезан, фирменный соус альфредо",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif"
+  },
+  {
+    "id": 7,
+    "name": "Пицца Баварская",
+    "description": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EEF45D5CD88B939DA8A1E5F9DF03BB.avif"
+  },
+  {
+    "id": 8,
+    "name": "Пицца Песто",
+    "description": "Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, фирменный соус альфредо",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D613B84A5DBB4C1C50FB9583B7E.avif"
+  },
+  {
+    "id": 9,
+    "name": "Пицца Карбонара",
+    "description": "Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, фирменный соус альфредо, итальянские травы",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D61389AB51A8F648A0DBA5B1689.avif"
+  },
+  {
+    "id": 10,
+    "name": "Пицца Мясная",
+    "description": "Цыпленок, ветчина, пикантная пепперони, острая чоризо, моцарелла, фирменный томатный соус",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D6108E3A1C9952CD3A7F39A4D02.avif"
+  },
+  {
+    "id": 11,
+    "name": "Пицца Бургер",
+    "description": "Ветчина, маринованные огурчики, томаты, красный лук, чеснок, соус бургер, моцарелла, фирменный томатный соус",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D61698827EE9B8DB6D0AEC53410.avif"
+  },
+  {
+    "id": 12,
+    "name": "Пицца Сырный цыпленок",
+    "description": "Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, фирменный соус альфредо, чеснок",
+    "price": {
+      "small": 339,
+      "medium": 559,
+      "big": 699
+    },
+    "image": "https://media.dodostatic.net/image/r:292x292/11EE7D610E8BBB248F31270BE742B4BD.avif"
+  }
+]
