@@ -11,11 +11,12 @@ const SkeletonCard = (props) => (
     foregroundColor="#ecebeb"
     {...props}
   >
-    <circle cx="100" cy="100" r="100" /> 
-    <rect x="0" y="210" rx="10" ry="10" width="300" height="24" /> 
-    <rect x="0" y="249" rx="10" ry="10" width="300" height="67" /> 
-    <rect x="0" y="333" rx="10" ry="10" width="120" height="34" /> 
-    <rect x="137" y="333" rx="10" ry="10" width="159" height="34" />
+    <circle cx="150" cy="115" r="100" /> 
+    <rect x="15" y="230" rx="10" ry="10" width="270" height="24" /> 
+    <rect x="15" y="270" rx="10" ry="10" width="270" height="40" /> 
+    <rect x="15" y="320" rx="10" ry="10" width="270" height="66" /> 
+    <rect x="15" y="400" rx="10" ry="10" width="120" height="34" /> 
+    <rect x="155" y="400" rx="10" ry="10" width="132" height="34" />
   </ContentLoader>
 )
 
