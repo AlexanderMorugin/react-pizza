@@ -1,30 +1,24 @@
-import { useEffect, useState } from 'react';
-import Cards from '../../components/cards';
+import { Route, Routes } from 'react-router';
 import Header from '../../components/header';
-import SortBar from '../../components/sort-bar';
+import MainPage from '../../pages/MainPage/MainPage';
+import CartPage from '../../pages/CartPage/CartPage';
+import NotFoundPage from '../../pages/NotFoundPage/NotFoundPage';
 
 import styles from './app.module.scss';
 
+
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [pizza, setPizza] = useState([]);
-
-  useEffect(() => {
-    fetch('https://661d23c4e7b95ad7fa6c40f7.mockapi.io/items')
-      .then((res) => res.json())
-      .then((data) => {
-        setTimeout(() => {
-          setPizza(data);
-          setIsLoading(false);
-        }, 5000);
-      });
-  }, []);
-
   return (
     <div className={styles.app}>
       <Header />
-      <SortBar />
-      <Cards isLoading={isLoading} pizza={pizza} />
+
+      <main className={styles.main}>
+        <Routes>
+          <Route path='/' element={<MainPage />} />
+          <Route path='cart' element={<CartPage />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+      </main>
     </div>
   );
 };
