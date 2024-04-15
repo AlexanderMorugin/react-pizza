@@ -2,5 +2,7 @@ export interface ICard {
   image: string;
   name: string;
   description: string;
-  price: string;
+  types: string[];
+  size: number[];
+  price: number[];
 }

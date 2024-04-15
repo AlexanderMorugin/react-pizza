@@ -59,11 +59,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+    border: 2px solid var(--orange-primary);
     border-radius: 15px;
-    background: var(--orange-primary);
-    font: var(--font-xs-bold);
-    color: var(--light-primary);
+    background: var(--light-primary);
+    font: var(--font-xs-medium);
+    color: var(--orange-secondary);
     letter-spacing: 0.5px;
     width: 100%;
     margin: 0;
@@ -73,6 +73,10 @@
   }
 
   &__button:hover {
-    box-shadow: 0 0 5px var(--grey-thirdary);
+    box-shadow: 0 0 5px var(--brown-secondary);
+  }
+
+  &__span {
+    font: var(--font-xs-bold);
   }
 }

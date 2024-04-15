@@ -9,31 +9,24 @@
   margin: 0;
   padding: 5px;
 
-  &__classes {
+  &__items {
     display: flex;
     gap: 5px;
+    font: var(--font-xxxs-bold);
+    color: var(--dark-secondary);
+    letter-spacing: 0.5px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-  &__sizes {
-    display: flex;
-    gap: 5px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  &__box {
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    font: var(--font-xxxs-bold);
-    color: var(--dark-secondary);
-    letter-spacing: 0.5px;
     border-radius: 6px;
+    background: transparent;
     box-sizing: border-box;
     margin: 0;
     padding: 5px;
@@ -41,7 +34,7 @@
     cursor: pointer;
   }
 
-  &__box:hover {
+  &__item:hover {
     box-shadow: 0 0 5px var(--grey-thirdary);
   }
 
@@ -51,9 +44,6 @@
     align-items: center;
     width: 100%;
     background: var(--light-primary);
-    font: var(--font-xxxs-bold);
-    color: var(--dark-secondary);
-    letter-spacing: 0.5px;
     border-radius: 6px;
     box-sizing: border-box;
     margin: 0;

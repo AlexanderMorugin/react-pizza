@@ -1,4 +1,4 @@
-import logo from '../../../../assets/icons/icon_pizza_logo.svg';
+import logo from '../../../assets/icons/icon_pizza_logo.svg';
 
 import styles from './logo.module.scss';
 

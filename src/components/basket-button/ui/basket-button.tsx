@@ -1,4 +1,4 @@
-import basket from '../../../../assets/icons/icon_shopping_bag_white.svg';
+import basket from '../../../assets/icons/icon_shopping_bag_white.svg';
 
 import styles from './basket-button.module.scss';
 
