@@ -8,14 +8,23 @@
   margin: 0;
   padding: 20px 0;
 
+  @media (max-width: 992px) {
+    flex-direction: column-reverse;
+  }
+
   &__buttons {
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 100%;
+    flex-wrap: wrap;
+    width: fit-content;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
   }
 
   &__button {
@@ -33,8 +42,13 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: 0.2s;
+
+    @media (max-width: 768px) {
+      font: var(--font-xxxs-medium);
+      padding: 5px 10px;
+    }
   }
-  
+
   &__button:hover {
     box-shadow: 0 0 5px var(--grey-thirdary);
   }
@@ -53,9 +67,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 10px 20px;
+
+    @media (max-width: 768px) {
+      font: var(--font-xxxs-medium);
+      padding: 5px 10px;
+    }
   }
 }
-
-
-
-

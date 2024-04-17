@@ -1,11 +1,37 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content:stretch;
+  justify-content: center;
   gap: 20px;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

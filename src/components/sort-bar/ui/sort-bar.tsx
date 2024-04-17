@@ -21,7 +21,7 @@ const SortBar = () => {
   };
 
   return (
-    <div className={styles.bar}>
+    <section className={styles.bar}>
       <ul className={styles.bar__buttons}>
         {categories.map((category, index) => (
           <li
@@ -36,7 +36,7 @@ const SortBar = () => {
         ))}
       </ul>
       <Sorting />
-    </div>
+    </section>
   );
 };
 
