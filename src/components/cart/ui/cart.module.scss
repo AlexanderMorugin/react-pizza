@@ -4,9 +4,95 @@
   gap: 20px;
   width: 100%;
   max-width: 1000px;
-  box-sizing: border-box;
-  margin: 0;
   padding: 20px 0;
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    width: fit-content;
+    font: var(--font-s-medium);
+    color: var(--dark-primary);
+  }
+
+  &__quantity {
+    font: var(--font-s-bold);
+  }
+
+  &__amount {
+    font: var(--font-s-bold);
+    color: var(--orange-secondary);
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  &__back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 120px;
+    min-height: 35px;
+    background: var(--light-primary);
+    border: 1px solid var(--grey-thirdary);
+    border-radius: 18px;
+    font: var(--font-s-medium);
+    color: var(--dark-primary);
+    letter-spacing: 0.5px;
+    padding: 6px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.5;
+  }
+
+  &__back:hover {
+    opacity: 0.8;
+  }
+
+  &__arrow {
+    width: 7px;
+  }
+
+  &__pay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    min-height: 35px;
+    background: var(--orange-primary);
+    border: 0;
+    border-radius: 18px;
+    font: var(--font-s-bold);
+    color: var(--light-primary);
+    letter-spacing: 0.5px;
+    padding: 6px 20px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  &__pay:hover {
+    box-shadow: 0 0 5px var(--grey-thirdary);
+  }
 }
-
-

@@ -16,6 +16,7 @@ const MainPage = () => {
           setIsLoading(false);
         }, 5000);
       });
+    window.scrollTo(0, 0);
   }, []);
 
   return (
