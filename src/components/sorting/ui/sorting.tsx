@@ -1,9 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import arrow from '../../../assets/icons/icon_arrow_sort.svg';
 
 import styles from './sorting.module.scss';
 
+
 const Sorting = () => {
+  const sortRef = useRef(null);
+  // const dispatch = useDispatch();
+  // const sort = useSelector((state) => state.filter.sort);
+
+  // console.log('sort - ', sort);
+
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
   const popupMenu = ['популярности', 'цене', 'алфавиту'];
@@ -14,8 +21,35 @@ const Sorting = () => {
     setOpen(!open);
   };
 
+  const handleOutsideClick = (event: MouseEvent) => {
+    const path = event.path || (event.composedPath && event.composedPath());
+    if (path && !path.includes(sortRef.current)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.body.addEventListener('click', handleOutsideClick);
+    return () => {
+      document.body.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
+  const handleEscapeKeyDown = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleEscapeKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKeyDown);
+    };
+  }, []);
+
   return (
-    <div className={styles.sorting}>
+    <div ref={sortRef} className={styles.sorting}>
       <img className={styles.sorting__image} src={arrow} />
       <span className={styles.sorting__text}>Сортировка&nbsp;по:</span>
       <span className={styles.sorting__link} onClick={() => setOpen(!open)}>
@@ -24,21 +58,18 @@ const Sorting = () => {
 
       {/* popup menu */}
       {open && (
-        <ul className={styles.sorting__popup}>
+        <ul className={styles.popup}>
           {popupMenu.map((item, index) => (
             <li
               key={index}
               className={
-                active === index ? styles.sorting__active : styles.sorting__nav
+                active === index ? styles.popup__active : styles.popup__nav
               }
               onClick={() => handleClick(index)}
             >
               {item}
             </li>
           ))}
-          {/* <li className={styles.sorting__nav}>популярности</li>
-          <li className={styles.sorting__active}>цене</li>
-          <li className={styles.sorting__nav}>алфавиту</li> */}
         </ul>
       )}
     </div>

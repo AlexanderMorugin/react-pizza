@@ -3,8 +3,15 @@ import { useState } from 'react';
 import Sorting from '../../sorting';
 
 import styles from './sort-bar.module.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { setCategoryId } from '../../../redux/slices/filter-slice';
 
 const SortBar = () => {
+  const dispatch = useDispatch();
+  const categoryId = useSelector((state) => state.filter.categoryId);
+
+  console.log(categoryId);
+
   const categories = [
     'Все',
     'Мясные',
@@ -18,6 +25,8 @@ const SortBar = () => {
 
   const handleClick = (index: number) => {
     setActive(index);
+    dispatch(setCategoryId(index));
+    console.log(index);
   };
 
   return (
