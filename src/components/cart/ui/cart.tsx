@@ -5,24 +5,36 @@ import CartHead from '../../cart-head';
 import CartItem from '../../cart-item';
 
 import styles from './cart.module.scss';
+import { useSelector } from 'react-redux';
+
 
 const Cart = () => {
+
+  const { items, totalPrice } = useSelector((state) => state.cart);
+  const totalCount = items.reduce((amount, item) => amount + item.count, 0)
+
+
+  console.log(items)
+
   return (
     <section className={styles.cart}>
       <CartHead />
-      <CartItem />
-      <CartItem />
-      <CartItem />
-      <CartItem />
-      <CartItem />
+      <ul className={styles.cart__list}>
+        {items.map((item) => (
+          <li key={item.id}>
+            <CartItem {...item} totalPrice={totalPrice} />
+          </li>
+        ))}
+      </ul>
+
       <div className={styles.cart__total}>
         <div className={styles.cart__box}>
           <span>Всего пицц:</span>
-          <span className={styles.cart__quantity}>3 шт</span>
+          <span className={styles.cart__quantity}>{totalCount} шт</span>
         </div>
         <div className={styles.cart__box}>
           <span>Сумма заказа:</span>
-          <span className={styles.cart__amount}>990 руб</span>
+          <span className={styles.cart__amount}>{totalPrice} руб</span>
         </div>
       </div>
       <div className={styles.cart__buttons}>

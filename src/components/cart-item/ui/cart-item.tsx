@@ -1,30 +1,50 @@
+import { useDispatch } from 'react-redux';
 import styles from './cart-item.module.scss';
+import { addItems, minusItems, removeItems } from '../../../redux/slices/cart-slice';
 
-const CartItem = () => {
+const CartItem = ({ id, image, name, count, totalPrice }) => {
+  const dispatch = useDispatch();
+
+  const plusItem = () => {
+    dispatch(
+      addItems({
+        id
+      })
+    );
+  };
+
+  const minusItem = () => {
+    dispatch(minusItems(id));
+  };
+
+  const removeItem = () => {
+    dispatch(removeItems(id));
+  };
+
   return (
     <div className={styles.cartItem}>
       <div className={styles.cartItem__mainBox}>
-        <img
-          className={styles.cartItem__image}
-          src='https://media.dodostatic.net/image/r:292x292/11EE7D610D2925109AB2E1C92CC5383C.avif'
-          alt='Pizza'
-        />
+        <img className={styles.cartItem__image} src={image} alt={name} />
         <div className={styles.cartItem__titleBox}>
           <div className={styles.cartItem__title}>
-            <h5 className={styles.cartItem__name}>Пицца Двойной цыпленок</h5>
+            <h5 className={styles.cartItem__name}>{name}</h5>
             <p className={styles.cartItem__description}>тонкое тесто, 26см</p>
           </div>
           <div className={styles.cartItem__countBox}>
             <div className={styles.cartItem__count}>
-              <div className={styles.cartItem__math}>&minus;</div>
-              <p className={styles.cartItem__number}>2</p>
-              <div className={styles.cartItem__math}>&#43;</div>
+              <div onClick={minusItem} className={styles.cartItem__math}>
+                &minus;
+              </div>
+              <p className={styles.cartItem__number}>{count}</p>
+              <div onClick={plusItem} className={styles.cartItem__math}>
+                &#43;
+              </div>
             </div>
-            <p className={styles.cartItem__price}>770 p</p>
+            <p className={styles.cartItem__price}>{totalPrice} p</p>
           </div>
         </div>
       </div>
-      <div className={styles.cartItem__delete}>&times;</div>
+      <div onClick={removeItem} className={styles.cartItem__delete}>&times;</div>
     </div>
   );
 };

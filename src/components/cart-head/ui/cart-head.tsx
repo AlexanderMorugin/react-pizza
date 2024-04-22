@@ -1,9 +1,16 @@
+import { useDispatch } from 'react-redux';
 import cart from '../../../assets/icons/icon_cart.svg';
 import trash from '../../../assets/icons/icon_trash.svg';
 
 import styles from './cart-head.module.scss';
+import { clearItems } from '../../../redux/slices/cart-slice';
 
 const CartHead = () => {
+  const dispatch = useDispatch();
+
+  const handleClear = () => {
+    dispatch(clearItems());
+  };
   return (
     <div className={styles.cartHead}>
       <div className={styles.cartHead__name}>
@@ -13,7 +20,7 @@ const CartHead = () => {
 
         <h1 className={styles.cartHead__title}>Корзина</h1>
       </div>
-      <div className={styles.cartHead__clean}>
+      <div onClick={handleClear} className={styles.cartHead__clean}>
         <img className={styles.cartHead__cleanImage} src={trash} alt='Trash' />
         <p className={styles.cartHead__cleanText}>Очистить корзину</p>
       </div>

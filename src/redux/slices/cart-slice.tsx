@@ -24,18 +24,29 @@ export const cartSlice = createSlice({
       }
 
       state.totalPrice = state.items.reduce((amount, obj) => {
-        return amount + obj.price[0] * obj.count;
+        return obj.price[0] * obj.count + amount;
       }, 0);
+    },
+    minusItems: (state, action) => {
+      const findItems = state.items.find((obj) => obj.id === action.payload);
+      if (findItems) {
+        findItems.count--;
+      }
+      // state.totalPrice = state.items.reduce((amount, obj) => {
+      //   return obj.price[0] * obj.count - amount;
+      // }, 0);
     },
     removeItems: (state, action) => {
       state.items = state.items.filter((obj) => obj.id !== action.payload);
     },
     clearItems: (state) => {
       state.items = [];
+      state.totalPrice = 0;
     },
   },
 });
 
-export const { addItems, removeItems, clearItems } = cartSlice.actions;
+export const { addItems, minusItems, removeItems, clearItems } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;
